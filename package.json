@@ -1,0 +1,19 @@
+{
+  "name": "xt_class_2018",
+  "version": "1.0.0",
+  "description": "XT Class 2018 - demoproject",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alebaato/xt_class_2018.git"
+  },
+  "author": "alebaato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alebaato/xt_class_2018/issues"
+  },
+  "homepage": "https://github.com/alebaato/xt_class_2018#readme"
+}

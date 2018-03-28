@@ -1,8 +1,10 @@
 # XT Class 2018
 Demoproject to get in touch and/or refresh XT basics.
 
+
 ## Content
 * **Lesson 1 - Git Hub + Project Setup**
+* **Lesson 2 - Editor Config and CSS styling methodologies**
 * **Built With**
 * **Install**
 
@@ -14,12 +16,46 @@ Demoproject to get in touch and/or refresh XT basics.
 * Add as Collaborators to your GitHub repository:
   * [0m4r (Omar Adobati) · GitHub](https://github.com/0m4r)
   * [bwcgn (Bastian Winkler) · GitHub](https://github.com/bwcgn)
+  
+## Lesson 2 - Editor Config and CSS styling methodologies
+* align with your colleagues and define a editor config for the XT Class. The dot file should be present in everyones repo
+* After you have done this, please choose at least 2 CSS methodologies from the following list:
+  * BEM
+  * Atomic
+  * OOCSS
+  * SMACSS
+  * SUITCSS
+  * ITCSS
+* Style your previously created teaser based on the chosen methods and document shortly why you chose those methods in a blog post here in VOX.
 
 
 ## Built With
-* [Normalize.css](https://necolas.github.io/normalize.css/) <br/>
+* **[Normalize.css](https://necolas.github.io/normalize.css/)**<br/>
 To achieve a more consistent rendering of elements across browsers we include normalize.css. Common bugs get corrected and usefull defaults are preserved.
 
+* **OOCSS (Object Oriented CSS)**<br/>
+OOCSS is not a programming language, it is more kind of a programming paradigm.
+The purpose is to encourage code reuse and create more efficient stylesheets that are easier to maintain.
+
+  Prinicples of OOCSS:
+  * separation of structure from skin
+  * separation of containers and content
+
+  Benefits:
+  * Faster websites <br>
+  * Smaller filesizes lead to faster downloading the css resources
+  * Maintainable stylesheets <br>
+  The natural cascade of the html is taken into consideration. Existing rule sets are used an extended.
+
+* **BEM**<br/>
+BEM is a specific concrete application of OOCSS. It stands for *Block Element Modifier*, and it describes the pattern of each CSS object's class name. It provides a way to arrange your CSS classes into modules.<br/>
+An Implementation for example looks like this:
+  ```
+  .block {}
+  .block__element {}
+  .block--modifier {}
+  .block__element--modifier {}
+  ```
 
 ## Install
 Clone git repository:
