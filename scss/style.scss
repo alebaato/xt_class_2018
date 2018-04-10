@@ -1,0 +1,103 @@
+body{
+    background: #cddee6;
+    font-family: 'Vidaloka', serif;
+    display: flex;
+    justify-content: center;
+    font-size: 16px; /* use rem font size */
+}
+.teaser{
+    color: #424a55;
+    background: #ffffff;
+    width: 600px;
+    height: 395px;
+    position: relative;
+    font-size: 15px;
+    margin: 30px;
+    display: flex;
+    -webkit-box-shadow: 0 0 45px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 45px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 45px 0 rgba(0,0,0,0.2);
+
+    &__visual{
+        width: 50%;
+        min-width: 50%;
+        background: #e6e6e6;
+    }
+
+    &__head{
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        font: normal 3.2em/105% 'Vidaloka', serif;
+        width: 65%;
+        margin: 0;
+        padding: 0;
+
+        &--highlight{
+            color: #a2a45b;
+            font-family: 'Alice', serif;
+
+            &:before{
+                content: "\a";
+                white-space: pre;
+            }
+        }
+    }
+
+    &__exerpt{
+        margin: 175px 40px 0;
+        padding: 15px 0 0 0;
+        position: relative;
+        float: right;
+        font: normal 1em/120% 'Alice', serif;
+
+        &:before{
+            display: block;
+            content: "";
+            width: 40px;
+            height: 1px;
+            background: #e6e6e6;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__btn{
+        color: #ffffff;
+        background: #424a55;
+        position: absolute;
+        bottom: 35px;
+        left: 340px;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font: 600 normal .9em/120% 'Open Sans', sans-serif;
+        text-decoration: none;
+
+        &:after{
+            display: inline-block;
+            content: "\203A";
+            font-size: 1.4em;
+            font-weight: normal;
+            width: 6px;
+            height: 10px;
+            color: #ffffff;
+            margin: 0 0 0 11px;
+            top: 1px;
+            position: relative;
+        }
+
+        &:hover{
+            background: #333944;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited{
+            text-decoration: none;
+        }
+
+    }
+}
