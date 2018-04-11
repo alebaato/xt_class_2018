@@ -58,7 +58,19 @@ An Implementation for example looks like this:
   ```
 
 ## Install
-Clone git repository:
-```
-git clone https://github.com/alebaato/xt_class_2018.git
-```
+* Clone git repository:
+  ```
+  git clone https://github.com/alebaato/xt_class_2018.git
+  ```
+* Install required packages via NPM
+  ```
+  npm install
+  ```
+* Generate files (html, css, js, img) into "dist" directory
+  ```
+  gulp default
+  ```
+* Watch SASS file for changes and generate css
+  ```
+  gulp watch
+  ```

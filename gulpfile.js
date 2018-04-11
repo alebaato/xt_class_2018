@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+var watch = require('gulp-watch');
 
 gulp.task('copy-html', function() {
     gulp.src('./index.html')
@@ -41,6 +42,10 @@ gulp.task('img', function () {
     return gulp.src('img/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('watch', function() {
+    gulp.watch('scss/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['copy-html', 'copy-css', 'css', 'js', 'img']);
