@@ -28,6 +28,16 @@ Demoproject to get in touch and/or refresh XT basics.
   * ITCSS
 * Style your previously created teaser based on the chosen methods and document shortly why you chose those methods in a blog post here in VOX.
 
+## Lesson 3 - A tale of branches, pull-request and css preprocessors
+* create a new branch where to apply the next changes to your code and 
+* create a pull-request to allow for code review by the other 2 members of the class
+* pick a CSS preprocessor and refactor your CSS to work with it
+  * gulp 
+  * grunt
+  * webpack
+* generate CSS
+* minify CSS
+* extend the README.md to document how to run and build the project
 
 ## Built With
 * **[Normalize.css](https://necolas.github.io/normalize.css/)**<br/>
@@ -58,7 +68,19 @@ An Implementation for example looks like this:
   ```
 
 ## Install
-Clone git repository:
-```
-git clone https://github.com/alebaato/xt_class_2018.git
-```
+* Clone git repository:
+  ```
+  git clone https://github.com/alebaato/xt_class_2018.git
+  ```
+* Install required packages via NPM
+  ```
+  npm install
+  ```
+* Generate files (html, css, js, img) into "dist" directory
+  ```
+  gulp default
+  ```
+* Watch SASS file for changes and generate css
+  ```
+  gulp watch
+  ```
