@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var babelpolyfill = require('babel-polyfill');
+var babel = require('gulp-babel');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var cleanCSS = require('gulp-clean-css');
@@ -26,16 +28,21 @@ gulp.task('sass', function () {
 
 gulp.task('css', ['sass'], function () {
     return gulp.src('css/style.css')
-    .pipe(concat('styles.min.css'))
+    .pipe(concat('style.min.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('js', function () {
-    return gulp.src('js/**/*.js')
+gulp.task('js', function() {
+    return gulp.src([
+        'node_modules/babel-polyfill/dist/polyfill.js',
+        'js/**/*.js'])
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('img', function () {
